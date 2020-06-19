@@ -36,7 +36,7 @@ a:hover {
 html,
 body {
   background-color: #000;
-  background-image: url(../images/banner.jpg);
+  bbackground-image: url(../images/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
@@ -133,7 +133,7 @@ p {
 
 @media (pointer: coarse) and (hover: none) {
   .page-top {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    background: url(images/2.jpg) black no-repeat center center scroll;
   }
   .page-top video {
     display: none;
