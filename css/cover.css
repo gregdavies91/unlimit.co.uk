@@ -133,7 +133,7 @@ p {
 
 @media (pointer: coarse) and (hover: none) {
   .page-top {
-    background: url(./images/2.jpg) black no-repeat center center scroll;
+    background: url(images/2.jpg) black no-repeat center center scroll;
   }
   .page-top video {
     display: none;
