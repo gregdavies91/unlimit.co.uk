@@ -133,7 +133,7 @@ p {
 
 @media (pointer: coarse) and (hover: none) {
   .page-top {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    background: url(./images/2.jpg) black no-repeat center center scroll;
   }
   .page-top video {
     display: none;
@@ -305,21 +305,10 @@ img {
         }
       } 
 
-.icon {
-  width: 20px;
-    padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 0px;
+#social-link {
+  width: 30px;
+  padding-left: 20px;
 }
-
-      @media (min-width: 768px) {
-              .icon {
-                width: 20px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                padding-left: 0px;
-        }
-      } 
 
 
 .masthead {

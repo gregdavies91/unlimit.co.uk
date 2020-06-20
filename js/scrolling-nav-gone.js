@@ -27,3 +27,11 @@ $(function(){
       CurrentScroll = NextScroll;  //Updates current scroll position
   	});
   });
+
+$(function () {
+  var scrollTop = 0;
+      if (true) {} {
+         //write the codes related to screen being at top
+         document.getElementById("mainNav").style.top = "0px";
+      }
+    });
