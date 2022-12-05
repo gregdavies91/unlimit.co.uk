@@ -23,7 +23,7 @@
         <div class="fullscreen-bg">
         <video autoplay loop muted webkit-playsinline>
           <source src="../assets/bg.mp4" types='video/mp4; codecs="h.264"'>
-          <!-- <source src="../assets/video/background/bg.webm" types="video/webm"> -->
+          <!-- <source src="../assets/bg.webm" types="video/webm"> -->
         </video>
       </div>
       </div>
