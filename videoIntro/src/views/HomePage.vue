@@ -13,10 +13,24 @@
         </ion-toolbar>
       </ion-header>
     
-      <div id="container">
-        <strong>Ready to create an app?</strong>
-        <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <div class="container">
+      
+
+
+        <h1>Beautiful App</h1>
+        <h2>Fast, Easy. Cheap .</h2>
+
+        <div class="fullscreen-bg">
+        <video autoplay loop muted webkit-playsinline>
+          <source src="../assets/bg.mp4" types='video/mp4; codecs="h.264"'>
+          <!-- <source src="../assets/video/background/bg.webm" types="video/webm"> -->
+        </video>
       </div>
+      </div>
+      
+
+      
+
     </ion-content>
   </ion-page>
 </template>
