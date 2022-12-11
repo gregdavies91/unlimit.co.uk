@@ -20,13 +20,16 @@
           <source src="../assets/bg.mp4" types='video/mp4; codecs="h.264"'>
           <!-- <source src="../assets/bg.webm" types="video/webm"> -->
       </video>
-      <div id="container">
 
-        
+      <div class="container" id="container">
+      
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" size-sm>
+            <br>
+            <br>
             <h2>Tools for creating music</h2>
             <br>
-            <!-- Learn more scales with Unlimit Scales & l -->
-            <p>Learn more chords with Unlimit Chords (Currently only available for guitarists)</p>
             <br>
             <!-- <br>
             <ion-label><p>Download Unlimit Scales</p></ion-label>
@@ -35,11 +38,21 @@
             </ion-button> -->
             <br>
             <ion-label><p>Download Unlimit Chords iOS BETA</p></ion-label>
+            <br>
             <div>
               <a target="_blank" rel="noopener noreferrer" href="https://testflight.apple.com/join/uIanyIEK">
                 <img src="../assets/testflight.png" id="appstorebutton">
               </a>
-            </div>  
+            </div>
+          </ion-col>
+          <ion-col size="12" size-sm>
+            <div>
+              <img src="../assets/iosmockup.png">
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
       </div>
 
     </ion-content>
@@ -129,7 +142,7 @@ video {
 
 #container h2 {
   font-style: bold;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 #toolbarlogo {
