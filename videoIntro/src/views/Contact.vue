@@ -9,7 +9,7 @@
           <ion-menu-button color="dark"></ion-menu-button>
         </ion-button>
 
-        <div class="iosmockup">
+        <div>
           <img src="../assets/unlimitlogotransparent.png" id="toolbarlogo">
         </div>
         

@@ -25,11 +25,8 @@
       
       <ion-grid>
         <ion-row>
-          <ion-col size="12" size-sm>
-            <br>
-            <br>
+          <ion-col id="textcontainer" size="12" size-sm>
             <h2>Tools for creating music</h2>
-            <br>
             <br>
             <!-- <br>
             <ion-label><p>Download Unlimit Scales</p></ion-label>
@@ -45,10 +42,10 @@
               </a>
             </div>
           </ion-col>
-          <ion-col size="12" size-sm>
-            <div>
-              <img src="../assets/iosmockup.png">
-            </div>
+          <ion-col id="imagecontainer" size="12" size-sm>
+
+              <img id="iosmockup" src="../assets/iosmockup.png">
+
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -63,7 +60,6 @@
 <script lang="ts">
 import { IonContent, IonHeader, IonPage, IonToolbar, IonButton, IonLabel } from '@ionic/vue';
 import { defineComponent } from 'vue';
-import { download } from 'ionicons/icons';
 
 export default defineComponent({
   name: 'Home',
@@ -74,11 +70,6 @@ export default defineComponent({
     IonToolbar,
     IonButton,
     IonLabel
-  },
-  setup () {
-    return {
-      download
-    }
   }
 });
 </script>
@@ -87,6 +78,11 @@ export default defineComponent({
 ion-content {
   font-family: Office Code Pro !important;
   font-size: 1.2em;
+}
+
+#iosmockup {
+  min-width: 400px;
+  width: 800px;
 }
 
 #videobg {
@@ -118,9 +114,32 @@ ion-content {
   
   position: absolute;
   left: 75px;
-  right: 75px;
-  top: 50%;
+  right: 150px;
+  top: 55%;
   transform: translateY(-50%);
+
+}
+
+#textcontainer {
+  padding-top: 55px;
+  margin:auto;
+}
+
+@media (max-width: 1150px) {
+  #textcontainer {
+    padding-top: 105px;
+    padding-left: 60px;
+  }
+}
+
+@media (max-width: 1350px) {
+  #imagecontainer {
+  display: none;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 105px;
+  }
+
 }
 
 #container strong {
@@ -147,10 +166,8 @@ ion-content {
 
 #toolbarlogo {
   position: static;
-/*  min-width: 4vw;*/
-/*  width:50%;*/
   padding-top: 10px;
-  height:100px;
+  padding-bottom: 10px;
 }
 
 #appstorebutton {
