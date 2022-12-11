@@ -9,7 +9,7 @@
           <ion-menu-button color="dark"></ion-menu-button>
         </ion-button>
 
-        <div>
+        <div class="iosmockup">
           <img src="../assets/unlimitlogotransparent.png" id="toolbarlogo">
         </div>
         
@@ -18,7 +18,7 @@
     
     <ion-content :fullscreen="true">
 
-      <video autoplay loop muted webkit-playsinline>
+      <video id="videobg2" autoplay loop muted webkit-playsinline>
           <source src="../assets/bg.mp4" types='video/mp4; codecs="h.264"'>
           <!-- <source src="../assets/bg.webm" types="video/webm"> -->
       </video>
@@ -126,16 +126,16 @@ ion-content {
   font-size: 1.2em;
 }
 
-video {
+#videobg2 {
       position: fixed;
 /*      filter: blur(2px);*/
       filter: brightness(50%);
-      padding:0px;
+      padding-top: 100px;
       top: 50%;
       left: 50%;
-      min-width: 150vw;
-      width:105%;
-      height:105%;
+/*      min-width: 150vw;*/
+      width:115%;
+      height:100%;
       z-index: -100;
         -webkit-transform: translateX(-50%) translateY(-50%);
         -moz-transform: translateX(-50%) translateY(-50%);
@@ -148,6 +148,7 @@ video {
       -o-background-size: cover;
       background-size: cover;
       object-fit: fill;
+
 }
 
 #formcontainer {
