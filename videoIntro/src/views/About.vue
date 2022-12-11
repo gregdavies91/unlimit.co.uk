@@ -35,10 +35,11 @@
             </ion-button> -->
             <br>
             <ion-label><p>Download Unlimit Chords iOS BETA</p></ion-label>
-            <ion-button fill="clear" color="dark" target="_blank" rel="noopener noreferrer" href="https://testflight.apple.com/join/uIanyIEK">
-            <ion-icon :icon="download" size="large"></ion-icon>
-            </ion-button>
-              
+            <div>
+              <a target="_blank" rel="noopener noreferrer" href="https://testflight.apple.com/join/uIanyIEK">
+                <img src="../assets/testflight.png" id="appstorebutton">
+              </a>
+            </div>  
       </div>
 
     </ion-content>
@@ -47,7 +48,7 @@
 </template>
 
 <script lang="ts">
-import { IonContent, IonHeader, IonPage, IonToolbar, IonIcon, IonButton, IonLabel } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonToolbar, IonButton, IonLabel } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import { download } from 'ionicons/icons';
 
@@ -58,7 +59,6 @@ export default defineComponent({
     IonHeader,
     IonPage,
     IonToolbar,
-    IonIcon,
     IonButton,
     IonLabel
   },
@@ -139,4 +139,11 @@ video {
   padding-top: 10px;
   height:100px;
 }
+
+#appstorebutton {
+  padding-top:0px;
+  max-width:100%;
+  max-height:100%;
+}
+
 </style>

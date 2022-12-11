@@ -25,32 +25,29 @@
     
       <div id="formcontainer">
         <h2>Get in touch!</h2>
-        <p>If you have any question regarding Unlimit, you can send us an email at <a href="mailto:greg@unlimit.com">greg@unlimit.co.uk</a>.</p> 
+        <p>If you have any questions regarding Unlimit, you can send us an email at <a href="mailto:greg@unlimit.com">greg@unlimit.co.uk</a>.</p> 
         <br>
         <!-- <br>
         <p>If you prefer, you can also send a DM to <a href="https://twitter.com/unlimitltd" target="_blank">@unlimitltd</a>.</p>
         <br> -->
         <br>
         <form action="https://formsubmit.co/greg@unlimit.co.uk" method="POST">
-          <ion-list>
-            <ion-item>
+            <ion-item color="light" style="opacity:50%;">
               <ion-label>Name: </ion-label> 
               <ion-input name="name" type="text" color="dark" placeholder="Enter your name..." v-model="state.name"></ion-input>
             </ion-item>
             
-            <ion-item>
+            <ion-item color="light" style="opacity:50%;">
               <ion-label>Email: </ion-label>
               <ion-input name="email" color="dark" placeholder="Enter your email..." v-model="state.email"></ion-input>
               <span v-if="v$.email.$error">{{ v$.email.$errors[0].$message }}</span>    
             </ion-item>
 
-            <ion-item>
+            <ion-item color="light" style="opacity:50%;">
               <ion-textarea name="message" color="dark" placeholder="Write your message here..." v-model="state.message"></ion-textarea>
             </ion-item>
-
-        </ion-list>
         
-        <ion-button @click="submitForm" type="submit" expand="block" size="large" color="light">Submit</ion-button>
+        <ion-button @click="submitForm" type="submit" expand="block" size="large" color="light" style="opacity:50%;">Submit</ion-button>
         <input type="hidden" name="_subject" value="Unlimit website user feedback">
         <input type="hidden" name="_next" value="https://unlimit.co.uk">
         <input type="hidden" name="_captcha" value="false">
@@ -63,7 +60,7 @@
 </template>
 
 <script lang="ts">
-import { IonContent, IonHeader, IonPage, IonToolbar, IonLabel, IonInput, IonTextarea, IonItem, IonList } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonToolbar, IonLabel, IonInput, IonTextarea, IonItem } from '@ionic/vue';
 import { defineComponent, reactive, computed } from 'vue';
 import useValidate from '@vuelidate/core';
 import { required, email, minLength } from '@vuelidate/validators';
@@ -78,8 +75,7 @@ export default defineComponent({
     IonLabel,
     IonInput,
     IonTextarea,
-    IonItem,
-    IonList 
+    IonItem
   },
   setup() {
     const state = reactive({
@@ -156,7 +152,6 @@ video {
 
 #formcontainer {
   text-align: center;
-  
   position: absolute;
   left: 75px;
   right: 75px;
@@ -173,7 +168,6 @@ video {
   font-size: 16px !important;
   line-height: 22px;
   color: #fff !important;
-  
   margin: 0;
 }
 
