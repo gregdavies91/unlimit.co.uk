@@ -46,7 +46,7 @@
             </div>
           </ion-col>
           <ion-col size="12" size-sm>
-            <div>
+            <div id="imagecontainer">
               <img src="../assets/iosmockup.png">
             </div>
           </ion-col>
@@ -121,6 +121,52 @@ ion-content {
   right: 75px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+#imagecontainer {
+  padding-left: 100px;
+  padding-right: 100px;
+
+}
+
+@media (max-width: 1275px) {
+  #imagecontainer {
+  
+  padding-left: 100px;
+  padding-right: 100px;
+
+  left: 0;
+  right: 0;
+  top: 50px;
+
+  }
+ 
+
+  ion-grid {
+
+  position: absolute;
+  
+  }
+}
+
+
+@media (max-width: 675px) {
+  #imagecontainer {
+  
+  padding-left: 0px;
+  padding-right: 0px;
+  
+  left: 0;
+  right: 0;
+  top: 0;
+  }
+ 
+
+  ion-grid {
+
+  position: absolute;
+  
+  }
 }
 
 #container strong {
