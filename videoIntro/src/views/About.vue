@@ -113,8 +113,8 @@ ion-content {
   text-align: center;
   
   position: absolute;
-  left: 75px;
-  right: 150px;
+  left: 50px;
+  right: 50px;
   top: 55%;
   transform: translateY(-50%);
 
@@ -125,10 +125,27 @@ ion-content {
   margin:auto;
 }
 
+#imagecontainer {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 105px;
+}
+
+@media (min-width: 750px) {
+  #container {
+    text-align: center;
+  
+  position: absolute;
+  left: 150px;
+  right: 150px;
+  top: 55%;
+  transform: translateY(-50%);
+  }
+}
+
 @media (max-width: 1150px) {
   #textcontainer {
     padding-top: 105px;
-    padding-left: 60px;
   }
 }
 
@@ -139,7 +156,6 @@ ion-content {
   padding-right: 100px;
   padding-top: 105px;
   }
-
 }
 
 #container strong {
