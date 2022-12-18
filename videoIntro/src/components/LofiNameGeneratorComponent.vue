@@ -17,10 +17,11 @@
 </template>
 
 <script>
-import { IonContent, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonButton } from "@ionic/vue";
+import { IonPage, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonButton } from "@ionic/vue";
 
 export default {
   components: {
+    IonPage,
     IonCard,
     IonCardHeader,
     IonCardTitle,

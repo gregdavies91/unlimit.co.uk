@@ -34,7 +34,7 @@
 
 <script lang="ts">
 
-import { IonContent, IonHeader, IonPage, IonToolbar, IonButton, IonLabel } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonToolbar, IonButton } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import LofiNameGeneratorComponent from "../components/LofiNameGeneratorComponent.vue";
 
@@ -51,7 +51,7 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style scoped>
 ion-content {
   font-family: Office Code Pro !important;
   font-size: 1.2em;

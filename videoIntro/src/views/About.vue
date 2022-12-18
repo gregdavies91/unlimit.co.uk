@@ -58,7 +58,7 @@
 </template>
 
 <script lang="ts">
-import { IonContent, IonHeader, IonPage, IonToolbar, IonButton, IonLabel } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonToolbar, IonButton, IonGrid, IonLabel } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
@@ -69,12 +69,13 @@ export default defineComponent({
     IonPage,
     IonToolbar,
     IonButton,
+    IonGrid,
     IonLabel
   }
 });
 </script>
 
-<style>
+<style scoped>
 ion-content {
   font-family: Office Code Pro !important;
   font-size: 1.2em;

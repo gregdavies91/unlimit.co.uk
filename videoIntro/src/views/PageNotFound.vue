@@ -42,7 +42,7 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style scoped>
 ion-content, ion-input, ion-label, ion-button, ion-textarea {
   font-family: Office Code Pro !important;
   font-size: 1.2em;
