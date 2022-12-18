@@ -14,6 +14,15 @@
         <router-link to="/about" @click="closeMenu()">
           <ion-item>About</ion-item>
         </router-link>
+        <!-- <router-link to="/chords" @click="closeMenu()">
+          <ion-item>Chords</ion-item>
+        </router-link>
+        <router-link to="/scales" @click="closeMenu()">
+          <ion-item>Scales</ion-item>
+        </router-link> -->
+        <router-link to="/lofi-name-generator" @click="closeMenu()">
+          <ion-item>Lofi Name Generator</ion-item>
+        </router-link>
         <router-link to="/contact" @click="closeMenu()">
           <ion-item>Contact</ion-item>
         </router-link>
@@ -33,6 +42,7 @@ a {
 ion-item {
   font-family: Office Code Pro !important;
   font-size: 1.2em;
+  padding-bottom: 20px;
 
 }
 

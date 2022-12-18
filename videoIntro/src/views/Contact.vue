@@ -31,7 +31,7 @@
         <p>If you prefer, you can also send a DM to <a href="https://twitter.com/unlimitltd" target="_blank">@unlimitltd</a>.</p>
         <br> -->
         <br>
-        <form action="https://formsubmit.co/greg@unlimit.co.uk" method="POST">
+        <form action="https://formsubmit.co/feb45c732c4a51d92e1d721ecaf0c184" method="POST">
             <ion-item color="light" style="opacity:50%;">
               <ion-label>Name: </ion-label> 
               <ion-input name="name" type="text" color="dark" placeholder="Enter your name..." v-model="state.name"></ion-input>
