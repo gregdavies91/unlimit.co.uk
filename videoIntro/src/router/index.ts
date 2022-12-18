@@ -28,7 +28,7 @@ const routes: Array<RouteRecordRaw> = [
   //   component: Scales
   // },
   {
-    path: '/lofi-name-generator',
+    path: '/lofinamegenerator',
     name: 'LofiNameGenerator',
     component: LofiNameGenerator
   },

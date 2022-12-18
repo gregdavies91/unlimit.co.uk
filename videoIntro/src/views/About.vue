@@ -1,7 +1,7 @@
 <template>
   <ion-page>
 
-<ion-header>
+    <ion-header>
       <ion-toolbar style="--background: transparent">
 
 <!--   This button has to be on all views, can it be in a component? -->
