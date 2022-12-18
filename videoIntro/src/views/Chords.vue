@@ -62,7 +62,7 @@ import { IonContent, IonHeader, IonPage, IonToolbar, IonButton, IonLabel } from 
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'About',
+  name: 'Chords',
   components: {
     IonContent,
     IonHeader,

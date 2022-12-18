@@ -1,7 +1,7 @@
 <template>
   <ion-page>
 
-<ion-header>
+    <ion-header>
       <ion-toolbar style="--background: transparent">
 
 <!--   This button has to be on all views, can it be in a component? -->
@@ -21,36 +21,11 @@
           <!-- <source src="../assets/bg.webm" types="video/webm"> -->
       </video>
 
-      <div class="container" id="container">
-      
-      <ion-grid>
-        <ion-row>
-          <ion-col id="textcontainer" size="12" size-sm>
-            <h2>Tools for creating music</h2>
-            <br>
-            <!-- <br>
-            <ion-label><p>Download Unlimit Scales</p></ion-label>
-            <ion-button fill="clear" color="dark" target="_blank" rel="noopener noreferrer" href="">
-            <ion-icon :icon="download" size="large" label="Download Test Flight App"></ion-icon>
-            </ion-button> -->
-            <br>
-            <ion-label><p>Download Unlimit Chords iOS BETA</p></ion-label>
-            <br>
-            <div>
-              <a target="_blank" rel="noopener noreferrer" href="https://testflight.apple.com/join/uIanyIEK">
-                <img src="../assets/testflight.png" id="appstorebutton">
-              </a>
-            </div>
-          </ion-col>
-          <ion-col id="imagecontainer" size="12" size-sm>
+        <div class="container" id="container">
+          <LofiNameGeneratorComponent />
+        </div>
 
-              <img id="iosmockup" src="../assets/iosmockup.png">
-
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-
-      </div>
+        
 
     </ion-content>
 
@@ -58,18 +33,20 @@
 </template>
 
 <script lang="ts">
+
 import { IonContent, IonHeader, IonPage, IonToolbar, IonButton, IonLabel } from '@ionic/vue';
 import { defineComponent } from 'vue';
+import LofiNameGeneratorComponent from "../components/LofiNameGeneratorComponent.vue";
 
 export default defineComponent({
-  name: 'About',
+  name: 'LofiNameGenerator',
   components: {
     IonContent,
     IonHeader,
     IonPage,
     IonToolbar,
     IonButton,
-    IonLabel
+    LofiNameGeneratorComponent
   }
 });
 </script>
