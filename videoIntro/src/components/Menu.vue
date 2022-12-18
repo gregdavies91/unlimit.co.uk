@@ -48,7 +48,7 @@ ion-item {
 
 span {
 
-  padding-top: 15px;
+  padding-top: 30px;
 }
 
 #menu {
