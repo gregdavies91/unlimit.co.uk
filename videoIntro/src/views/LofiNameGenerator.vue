@@ -51,7 +51,7 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
+<style>
 ion-content {
   font-family: Office Code Pro !important;
   font-size: 1.2em;

@@ -1,5 +1,5 @@
 <template>
-  <ion-page>
+
         <ion-card color="black">
           <ion-card-header>
             <ion-card-title>Your Lofi Hip Hop Artist Name</ion-card-title>
@@ -13,15 +13,14 @@
         <br>
         <br>
         <p>It is important to note that we cannot guarantee that these names are unique. It is always a good idea to do your own research and make sure that the name you choose is not already in use by someone else.</p>
-  </ion-page>
+
 </template>
 
 <script>
-import { IonPage, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonButton } from "@ionic/vue";
+import { IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonButton } from "@ionic/vue";
 
 export default {
   components: {
-    IonPage,
     IonCard,
     IonCardHeader,
     IonCardTitle,
