@@ -20,7 +20,7 @@
         <router-link to="/scales" @click="closeMenu()">
           <ion-item>Scales</ion-item>
         </router-link> -->
-        <router-link to="/lofi-name-generator" @click="closeMenu()">
+        <router-link to="/lofinamegenerator" @click="closeMenu()">
           <ion-item>Lofi Name Generator</ion-item>
         </router-link>
         <router-link to="/contact" @click="closeMenu()">
@@ -62,7 +62,8 @@ import {
   IonContent, 
   IonItem, 
   IonList, 
-  IonMenu, 
+  IonMenu,
+  IonMenuButton, 
   IonRouterOutlet,
   menuController
 } from '@ionic/vue';
@@ -75,7 +76,8 @@ export default defineComponent({
     IonContent, 
     IonItem, 
     IonList, 
-    IonMenu, 
+    IonMenu,
+    IonMenuButton,
     IonRouterOutlet
     }
   },

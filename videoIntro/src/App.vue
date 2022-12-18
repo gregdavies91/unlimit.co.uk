@@ -4,7 +4,7 @@
       <Menu></Menu>
     </header> -->
 
-  <Menu />
+  <Menu></Menu>
   <div>
 <!--       <div :style="{ 'margin-left': menuWidth }"> -->
     <router-view />
