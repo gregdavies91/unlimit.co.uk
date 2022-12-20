@@ -80,6 +80,10 @@ ion-content {
   font-size: 1.2em;
 }
 
+ion-grid {
+  width:500px;
+}
+
 #iosmockup {
   min-width: 400px;
   width: 800px;
