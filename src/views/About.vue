@@ -20,12 +20,11 @@
           <source src="../assets/bg.mp4" types='video/mp4; codecs="h.264"'>
           <!-- <source src="../assets/bg.webm" types="video/webm"> -->
       </video>
-
-      <div class="container" id="container">
       
       <ion-grid>
         <ion-row>
-          <ion-col id="textcontainer" size="12" size-sm>
+          <ion-col size="12" size-sm>
+            <div id="textcontainer">
             <h2>Tools for creating music</h2>
             <br>
             <!-- <br>
@@ -41,16 +40,16 @@
                 <img src="../assets/testflight.png" id="appstorebutton">
               </a>
             </div>
+          </div>
           </ion-col>
-          <ion-col id="imagecontainer" size="12" size-sm>
+          <ion-col size="12" size-sm>
 
-              <img id="iosmockup" src="../assets/iosmockup.png">
-
+            <div id="imagecontainer">
+              <img src="../assets/iosmockup.png">
+            </div>
           </ion-col>
         </ion-row>
       </ion-grid>
-
-      </div>
 
     </ion-content>
 
@@ -81,12 +80,13 @@ ion-content {
 }
 
 ion-grid {
-  width:500px;
-}
+text-align: center;
 
-#iosmockup {
-  min-width: 400px;
-  width: 800px;
+  position: absolute;
+  left: 50px;
+  right: 50px;
+  top: 55%;
+  transform: translateY(-50%);
 }
 
 #videobg {
@@ -113,20 +113,10 @@ ion-grid {
       object-fit: fill;
 }
 
-#container {
-  text-align: center;
-  
-  position: absolute;
-  left: 50px;
-  right: 50px;
-  top: 55%;
-  transform: translateY(-50%);
-
-}
-
 #textcontainer {
   padding-top: 55px;
   margin:auto;
+  text-color: white !important;
 }
 
 #imagecontainer {
@@ -135,21 +125,10 @@ ion-grid {
   padding-top: 105px;
 }
 
-@media (min-width: 750px) {
-  #container {
-    text-align: center;
-  
-  position: absolute;
-  left: 150px;
-  right: 150px;
-  top: 55%;
-  transform: translateY(-50%);
-  }
-}
-
-@media (max-width: 1150px) {
+@media (max-width: 1950px) {
   #textcontainer {
     padding-top: 105px;
+    text-color: white !important;
   }
 }
 
@@ -162,12 +141,12 @@ ion-grid {
   }
 }
 
-#container strong {
+#textcontainer strong {
   font-size: 20px;
   line-height: 26px;
 }
 
-#container p {
+#textcontainer p {
   font-size: 16px;
   line-height: 22px;
   color: #fff;
@@ -175,11 +154,11 @@ ion-grid {
   margin: 0;
 }
 
-#container a {
+#textcontainer a {
   text-decoration: none;
 }
 
-#container h2 {
+#textcontainer h2 {
   font-style: bold;
   font-size: 30px;
 }
